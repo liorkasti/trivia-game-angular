@@ -1,0 +1,6 @@
+<div class="progress" *ngFor="let dummy of ' '.repeat(progressInfo.totalNumber).split(''), let x = index">
+    <button mat-mini-fab [color]="shouldEnable(x) ? 'buttonDone' : 'buttonNotDone'"
+    [disabled]="shouldEnable(x)">
+    </button>
+  </div>
+
