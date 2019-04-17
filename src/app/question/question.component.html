@@ -9,7 +9,7 @@
         <button 
           class="option" 
           (click)="answerSelected(option)"
-          [ngClass]="isSelected(option) ? 'option-clicked' : 'option'">
+          [ngClass]="isSelected(option) ? 'option-clicked' : 'myBtnClass'">
 
           <div>
             <img *ngIf = "checkCorrectness(option)" 

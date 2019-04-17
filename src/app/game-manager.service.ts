@@ -36,12 +36,16 @@ export class GameManagerService {
       qst.options.splice(rnd,0, qst.correctOption);
       questionNumer++;
 
-      this.questionsData.push(qst)
+      this.questionsData.push(qst);
     });
   }
 
   getCurrentQuestion() : Question {
     return this.questionsData[this.curIndex];
+  }
+
+  setCurrentQuestion(index: number) : void {
+    this.curIndex = index;
   }
 
   questionAnswered(){
@@ -76,5 +80,9 @@ export class GameManagerService {
 
   getCurrentIndex(): number{
     return this.curIndex;
+  }
+
+  getScore(): number{
+    return this.totalScore;
   }
 }

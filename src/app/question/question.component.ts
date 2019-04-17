@@ -17,6 +17,7 @@ export interface Question {
 })
 export class QuestionComponent implements OnInit {
   myImgUrl: string;
+  myBtnClass: string = 'option';
   
   @Input() questionInfo: Question;
 
@@ -29,6 +30,8 @@ export class QuestionComponent implements OnInit {
   }
 
   isSelected(selectedAnswer: string) : boolean{
+    // this.myBtnClass = 'option-clicked';
+    console.log(this.myBtnClass);
     return selectedAnswer == this.questionInfo.selectedAnswer;
   }
 
@@ -38,9 +41,13 @@ export class QuestionComponent implements OnInit {
     if (checkCorrectness) {
       if (this.questionInfo.selectedAnswer == this.questionInfo.correctOption) {
         this.myImgUrl = 'assets/images/Right.png';
+        this.myBtnClass = 'option-right';
+        console.log(this.myBtnClass);
       }
       else {
         this.myImgUrl = 'assets/images/Wrong.png';
+        this.myBtnClass = 'option-wrong';
+        console.log(this.myBtnClass);
       }
     }
 

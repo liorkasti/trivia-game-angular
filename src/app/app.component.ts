@@ -36,6 +36,9 @@ export class AppComponent implements OnInit {
   }
 
   questionAnswered(){
+    if (this.gameManagerService.getCurrentIndex() == this.progress.totalNumber - 1){
+      //todo: open dialog
+    }
     if(this.buttonText === "Continue"){
       this.getCurrentQuestion();
       this.progress.currentNumber ++;
