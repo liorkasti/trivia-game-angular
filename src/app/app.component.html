@@ -1,0 +1,30 @@
+<div class="screen">
+  <header id="bkgimg">
+    <img src="assets/images/Cover.png" class="rotate180" id="backImg">
+    <img src="assets/images/ZoomInfo.png" id="frontHeaderImg">
+  </header>
+
+
+  <div class="body"  id="question">
+    <app-question [questionInfo]="currentQuestion"></app-question>
+
+    <div class="mydiv" id="button">
+      <button [class]="getCurrentStateSelection() ? 'button' : 'continue'" 
+        (click)="questionAnswered()" 
+        [disabled]="getCurrentStateSelection()">
+        {{buttonText}}
+      </button>
+    </div>
+
+    <div class="mydiv" id="progress">
+      <app-progress [progressInfo]="progress"></app-progress>
+    </div>
+
+  </div>
+
+  <footer class="footerImg" id="bkgimg">
+    <img src="assets/images/Cover.png" id="backImg">
+  </footer>
+</div>
+
+<router-outlet></router-outlet>

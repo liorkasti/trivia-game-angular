@@ -1,0 +1,111 @@
+.option-right{
+    background: #FAFAFA;
+    border: 4px solid #33C933;
+    border-radius: 23px;  
+      
+    font-family: OpenSans-Semibold;
+    font-size: 28px;
+    color: #33C933;
+    letter-spacing: 0;
+    text-align: center;
+    left: 50%;
+}
+
+.option-wrong{
+    background: #FAFAFA;
+    border: 4px solid #FB4343;
+    border-radius: 23px;
+    
+    font-family: OpenSans-Semibold;
+    font-size: 28px;
+    color: #FB4343;
+    letter-spacing: 0;
+    text-align: center;
+    left: 50%;
+}
+
+// .option-clicked:visited {
+//     outline: none;
+//     border: 4px solid #0D7BAB;
+//     outline: none;
+//     box-shadow:none;
+//   }
+
+.option-clicked:target{
+    border: 4px solid #0D7BAB;
+    border-radius: 23px;
+    outline: none;
+    box-shadow:none;
+}
+
+.option-clicked:focus{
+    border: 4px solid #0D7BAB;
+    border-radius: 23px;
+    outline: none;
+    box-shadow:none;
+}
+
+.option-clicked{
+    border: 4px solid #0D7BAB;
+    border-radius: 23px;
+    outline: none;
+    box-shadow:none;
+}
+
+.option:hover {
+    border: 2px solid #D9E6EB;
+    border-radius: 23px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.option{
+    font-family: OpenSans-Semibold;
+    font-size: 28px;
+    color: #496472;
+    letter-spacing: 0;
+    text-align: center;
+    background: #FAFAFA;
+    border: 2px solid #D9E6EB;
+    border-radius: 23px;
+    width:570px;
+    height: 164px;
+    margin: 15px;
+}
+
+.btn-row{
+    width: 120;
+    height: 69px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.root-question{
+    padding-left: 10%;
+    padding-right: 10%;    
+}
+
+.question-number{
+    font-family: OpenSans-Bold;
+    font-size: 32px;
+    color: #0D7BAB;
+    letter-spacing: 0;
+}
+
+.question{
+    font-family: OpenSans;
+    font-size: 24px;
+    color: #223336;
+    letter-spacing: 0;
+}
+
+#question{
+    padding-bottom: 2%;
+}

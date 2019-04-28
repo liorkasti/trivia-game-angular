@@ -1,0 +1,112 @@
+.continue:hover{
+    background: #F68034;
+}
+
+.continue{
+    display: block;
+    font-family: OpenSans-Semibold;
+    font-size: 24px;
+    background: #FF8F48;
+    border-radius: 100px;
+    border: 0;
+    width: 375px;
+    height: 69px;
+    font-family: OpenSans-Semibold;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.button{
+    display: block;
+    background: #F0F0F0;
+    border-radius: 100px;
+    border: 0;
+    width: 375px;
+    height: 69px;
+    font-family: OpenSans-Semibold;
+    font-size: 30px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+#button{
+    position:relative;
+    padding-top: 2%; 
+    padding-bottom: 2.5%;
+    text-align:center;
+    justify-content: center;
+}
+
+#progress{
+    position:relative;
+}
+
+#question{
+    position:relative;
+}
+
+.body{
+    padding-top: 3%; 
+    padding-bottom: 1%;
+    left: 0%;
+    text-align:center;
+}
+
+.mydiv {
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    width:26%;
+    height:7.5%;
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    padding-left: 3%;
+    z-index: 1000000;
+}
+
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#bkgimg{
+    position:relative;
+    text-align: center;
+}
+
+#backImg {
+    width: auto; 
+    max-width: 100%;
+    z-index: 0;
+}
+
+#frontHeaderImg {
+    position: absolute;
+    left: 40%;
+    top: 10%;
+    z-index: 1000000;
+}
+
+.footerImg {
+    position: absolute;
+    width: auto; 
+    padding: 20px;
+    max-width: 100%;
+    z-index: 0; 
+    bottom: 0;
+    padding: 50px;
+    text-align:center;
+}
+
+.screen{
+    position:fixed;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
